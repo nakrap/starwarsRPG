@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Star Wars!</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Questrial|Quicksand:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" /> 
+
+</head>
+<!-- onload="initializeGame()" -->
+<body>
+    
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <div>
+                <a class="navbar-brand" id="textbox" href="https://nakrap.github.io/Bootstrap-Portfolio/" target="_blank">Nick Akrap</a>
+                </div>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right" id="navhov">
+                <li>
+                    <a href="https://nakrap.github.io/starwarsRPG/" id="reset">Reset</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Star Wars Attack</h1>
+                <h3 class="p1">Choose your Hero and fight the remaining enemies...</h3>
+                <!-- <P class="p2">Be careful, 6 wrong letters and YOU LOSE!</p> onclick="startGame()" -->
+            <div class="btn btn-primary btn-lg" href="#" role="button">Start</div> 
+        </div>  
+    </div>
+
+
+    <section class="game">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="row">                    
+                    <div class="col-xs-12" id="characters">
+                        <h4>Available Characters</h4>
+                    </div>
+                </div>    
+                <div class="row" "container">
+                    <div class="col-xs-3" class="characters" id="yoda" class="btn btn-primary btn-lg" href="#" role="button">
+                        <img src="assets/images/yoda.png" alt="Image of Yoda character">
+                        <h3>Yoda</h3> 
+                        <h5>Health</h5>
+                    </div>
+                    <div class="col-xs-3" class="characters" id="luke" class="btn btn-primary btn-lg" href="#" role="button">
+                        <img src="assets/images/luke.png" alt="Image of Luke Skywalker character">  
+                        <h3>Luke Skywalker</h3> 
+                        <h5>Health</h5>                     
+                    </div>
+                    <div class="col-xs-3" class="characters" id="darth" class="btn btn-primary btn-lg" href="#" role="button">
+                        <img src="assets/images/darthVader.png" alt="Image of Darth Vader character">
+                        <h3>Darth Vader</h3> 
+                        <h5>Health</h5>
+                    </div>
+                    <div class="col-xs-3" class="characters" id="storm" class="btn btn-primary btn-lg" href="#" role="button">
+                        <img src="assets/images/stormTrooper.png" alt="Image of Storm Trooper character">
+                        <h3>Storm Trooper</h3> 
+                        <h5>Health</h5>
+                    </div>
+                </div>
+                <!-- <div class="row">
+                    <div class="col-md-3" id="yoda2">
+                        <h3>Yoda</h3> 
+                    </div>
+                    <div class="col-md-3" id="luke2">
+                        <h3>Luke Skywalker</h3>                  
+                    </div>
+                    <div class="col-md-3" id="darth2">
+                        <h3>Darth Vader</h3> 
+                    </div>
+                    <div class="col-md-3" id="storm2">
+                        <h3>Storm Trooper</h3> 
+                    </div>
+                </div>                     -->
+            </div> 
+            <div class="row">
+                <div class="col-xs-5"> 
+                    <div id="puzzle" class="panel">
+                        <h4>Hero</h4>
+                    </div>
+                </div>
+                <div class="col-xs-2"> 
+                    <div id="puzzle" class="panel">
+                        <button>ATTACK</button>
+                    </div>
+                </div>
+                <div class="col-xs-5"> 
+                    <div id="puzzle" class="panel">
+                        <h4>Enemy</h4>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section> 
+
+
+    <footer class="navbar navbar-inverse navbar-fixed-bottom" id="navigation">
+        <div class="container" id="navwidth">
+            <div class="navbar-footer">
+                <div class="row">
+                    <div class="col-md-12">
+                            <a class="navbar-brand" id="parka">@copyright ParkaGames</a>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </footer>
+
+
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
