@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" /> 
 
 </head>
-<!-- onload="initializeGame()" -->
+
 <body>
     
 
@@ -40,7 +40,7 @@
 
             <ul class="nav navbar-nav navbar-right" id="navhov">
                 <li>
-                    <a href="https://nakrap.github.io/starwarsRPG/" id="reset">Reset</a>
+                    <a href="https://nakrap.github.io/starwarsRPG/" id="reload">Reload Game</a>
                 </li>
             </ul>
         </div>
@@ -51,8 +51,7 @@
         <div class="container">
             <h1>Star Wars Attack</h1>
                 <h3 class="p1">Choose your Hero and fight the remaining enemies...</h3>
-                <!-- <P class="p2">Be careful, 6 wrong letters and YOU LOSE!</p> onclick="startGame()" -->
-            <div class="btn btn-primary btn-lg" href="#" role="button">Start</div> 
+            <div class="btn btn-primary btn-lg" href="#" role="button" id="start">Start</div> 
         </div>  
     </div>
 
@@ -60,13 +59,13 @@
     <section class="game">
         <div class="container-fluid">            
             <div class="row" "container" id="player-zone">
-                <div class="col-xs-3 characters" id="yoda" class="btn btn-primary btn-lg" href="#" role="button">
+                <div class="col-xs-3 characters" class="btn btn-primary btn-lg" href="#" role="button" id="yoda">
                 </div>
-                <div class="col-xs-3 characters" id="luke" class="btn btn-primary btn-lg" href="#" role="button">
+                <div class="col-xs-3 characters" class="btn btn-primary btn-lg" href="#" role="button" id="luke">
                 </div>
-                <div class="col-xs-3 characters" id="darth" class="btn btn-primary btn-lg" href="#" role="button">
+                <div class="col-xs-3 characters" class="btn btn-primary btn-lg" href="#" role="button" id="darth">
                 </div>
-                <div class="col-xs-3 characters" id="storm" class="btn btn-primary btn-lg" href="#" role="button">
+                <div class="col-xs-3 characters" class="btn btn-primary btn-lg" href="#" role="button" id="storm">
                 </div>
             </div>
 
