@@ -84,6 +84,20 @@ body {
     float: left;
 }
 
+#myHero {
+    font-family: 'Josefin Sans', sans-serif;
+    background: blue;
+    border: 5px solid blue;
+    /* margin: 2.5%; */
+    /* width: 300px; */
+    float: left;
+}
+
+.enemiesAvail {
+    background: red;
+    border: 5px solid red;
+}
+
 #yoda, #luke, #darth, #storm {
     border: 0px;
     background: none;

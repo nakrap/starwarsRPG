@@ -63,9 +63,6 @@ for (var i = 0; i < allCharacters.length; i++) {
   
   };
 
-
-
-
   
   $('#start').on("click", function(){
         playGame();
@@ -74,120 +71,27 @@ for (var i = 0; i < allCharacters.length; i++) {
         
 });	
 
+
+
 function playGame(){
-    // console.log('show me something');
-        $('.btn').on("click", function(){
-            $('.btn').attr('hero', allCharacters[i]);
-              console.log('show me something');
-        });
-        // $('.characters').on("click", function(){
-        //     if(enemyChosen == false){
-        //         chooseOpponent(luke);
-        //     }
+  
+    const $kids = $('#player-zone').children();
 
-        // });
+        $kids.on('click', event => {
+        $(event.currentTarget).appendTo('#hero');
+        $(event.currentTarget).addClass('myHero');
+        $kids.siblings().addClass(".enemiesAvail");
+        
 
+        // $(this).siblings();
+        // $(event.currentTarget).css('border', '5px solid red');
+        // $('$kids').removeClass('.characters');
 
-
-//         $('#player-zone').on("click", "img[id = vader]", function(){
-//             chooseChar(vader);
-//         });
-//         $('#pane').on("click", "img[id = vader]", function(){
-//             if(enemyChosen == false){
-//                 chooseOpponent(vader);
-//                 $('img[id=vader]').fadeTo("slow", 0.0);
-//             }
-//         })
-//         $('#player-zone').on("click", "img[id = storm]", function(){
-//             chooseChar(storm);
-//         });
-//         $('#pane').on("click", "img[id = storm]", function(){
-//             if(enemyChosen == false){
-//                 chooseOpponent(storm);
-//                 $('img[id=maul]').fadeTo("slow", 0.0);
-//             }
-//         })
-//         $('#player-zone').on("click", "img[id = yoda]", function(){
-//             chooseChar(yoda);
-//         });
-//         $('#pane').on("click", "img[id = yoda]", function(){
-//             if(enemyChosen == false){
-//                     chooseOpponent(yoda);
-//                     $('img[id=yoda]').fadeTo("slow", 0.0);
-//             }
-//         })
-
-
-
-
-
-//         $('#attack').on("click", function(){
-//             if(enemyChosen == true){
-//                 attack(character, opponent)
-//             }
-//             else if (enemyCount == 0){
-//                 winner(character);
-//             }
-//         });	
+    });
+ 
     }
 
 
 
-
-
-//     function chooseChar(char){
-// 		characterChosen = true; 
-// 		character = char;
-// 		battle(char);
-
-// 	}
-// //Chooses your opponent for the round
-// 	function chooseOpponent(char){
-// 		if(enemyChosen == false){
-// 			opponent = char; 
-// 			enemyChosen = true; 
-// 			$('#enemy').empty(); 
-// 			$('#attack').empty();
-// 			$('#enemy').append("<div id = 'opponent'>"+char.defendImage+"<br><h4>"+char.name+"<br>Attack Power: "+char.attack+"<br>Health: "+char.health+"</h4></div>");
-// 			$('#attack').append("<button class = 'btn btn-danger attackButton'>ATTACK!</button>");
-
-// 		}
-//     }
-    
-//     function battle(char){
-// 		$('#player-zone').append("<div id = 'enemies'></div>");
-// 		$('#message').append("<div class = 'feedcontainer'><div id = 'feed'><p>Welcome to the battle, Jedi. Choose an enemy above to begin attacking. May for the force be with you, always.</p></div></div>");
-// 		$("#hero").append("<div id = 'player'>"+char.image+"<br><h4>"+char.name+"<br>Attack Power: "+char.attack+"<br>Health: "+char.health+"</h4></div>");
-// 		//for loop that goes through the enemies and makes sure thta each is added. 
-// 		for(var i = 0; i < characters.length; i++){
-// 			var enemy = "enemy"+i;  
-// 			if(characters[i].name != char.name){
-// 				$('#enemies').append("<div id ="+enemy+">"+characters[i].image+"</div>");
-// 			}
-// 		}
-// 	};
-
-
-
-
-
-
-
-
-  
-//   $('#attack').on('click', function() {
-//     player2.health -= currentPlayer.attack;
-  
-//     if(parseInt(player2.health )< 0) {
-//       document.write("You Win!");
-//     } else {
-//       currentPlayer.health -= player2.attack;
-//     }
-  
-//   });
-  
-//   var player1 = allCharacters[2];
-//   var player2 = allCharacters[3];
-//   var currentPlayer = player1;
 
 });
