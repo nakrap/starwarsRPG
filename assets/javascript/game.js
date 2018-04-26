@@ -143,7 +143,8 @@ var allCharacters = [
         attackBtn.insertAfter('#hero-zone');
     
         attackBtn.on('click', function() {
-          hero
+        // Write function to make attack button work, and have to pick another enemy.
+        // Also develop the ending. When do you win and lose? What message pops up?
         });
       }
     
